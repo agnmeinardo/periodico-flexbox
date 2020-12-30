@@ -1,0 +1,143 @@
+body { 
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.page {
+    background-color: white;
+    width: 70%;
+    margin: 0.5% 12.5% 0 12.5%;
+}
+
+header {
+    background-color: indianred;
+    color: black;  
+    margin-bottom: 40px ; 
+    height: 80px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+a{
+    font-size: 120%;
+}
+
+a:hover {
+    color: indianred;
+}
+
+#nav-left {
+    padding-left: 12px;
+}
+#nav-right {
+    padding-right: 12px;
+}
+
+#logocontainer {
+    height: 98%;
+    width: 8%;
+    padding: 2 2 2 2;
+}
+
+#logo {
+    height: 100%;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.section1 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#mobile-title {
+    display: none;
+}
+
+.section2 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.aside {
+    flex: 1.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+article {
+    padding: 0 5% 0 2.5%;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h5 {
+    font-size: 65%;
+    margin-top: 2%;
+}
+
+.article-image {
+    width: 100%;
+}
+
+.photo-footer {
+    text-align: center;
+    font-size: 85%;
+    margin-bottom: 15%;
+}
+
+.aside-image {
+    width: 80%;
+}
+
+footer {
+    height: 150px;
+    background-color: gray;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 50px;
+    line-height: 2px;
+}
+
+#h-footer {
+    font-size: 35px;
+}
+#p-footer {
+    font-size: 15px;
+}
+
+/* Mobile devices */
+@media (max-width: 900px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .aside {
+        flex: 1.4;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    #mobile-title {
+        display: block;
+    }
+}
